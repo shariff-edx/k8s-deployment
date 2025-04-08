@@ -16,6 +16,6 @@ spec:
       -  name: github-docker-auth
       containers:
         - name: citynex-api-app
-          image: ghcr.io/shariff-edx/citynex-api-service-main:3ba899ca
+          image: ghcr.io/shariff-edx/citynex-api-service-main:dbcade62
           ports:
             - containerPort: 5000
