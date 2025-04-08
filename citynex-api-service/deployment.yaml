@@ -16,6 +16,6 @@ spec:
       -  name: github-docker-secret
       containers:
         - name: citynex-api-app
-          image: ghcr.io/shariff-edx/citynex-api-service-main:latest
+          image: ghcr.io/shariff-edx/citynex-api-service-main:3ba899ca
           ports:
             - containerPort: 5000
