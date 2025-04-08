@@ -13,7 +13,7 @@ spec:
         app: citynex-api
     spec:
       imagePullSecrets:
-      -  name: github-docker-secret
+      -  name: github-docker-auth
       containers:
         - name: citynex-api-app
           image: ghcr.io/shariff-edx/citynex-api-service-main:3ba899ca
