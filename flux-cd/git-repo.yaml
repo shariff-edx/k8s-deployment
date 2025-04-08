@@ -1,0 +1,12 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: flux-apps
+  namespace: flux-system
+spec:
+  interval: 30s
+  url: https://github.com/shariff-edx/k8s-deployment
+  secretRef:
+    name: flux-github-auth
+  ref:
+    branch: main

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: citynex-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: citynex-api
+  template:
+    metadata:
+      labels:
+        app: citynex-api
+    spec:
+      imagePullSecrets:
+      -  name: github-docker-secret
+      containers:
+        - name: citynex-api-app
+          image: ghcr.io/shariff-edx/citynex-api-service-main:latest
+          ports:
+            - containerPort: 5000
